@@ -13,6 +13,7 @@ function App () {
   } //Desnecessário, podia chamar direto do ApiMethods
 
   const [posts,setPosts] = useState<FormType[]>([])
+  
   async function getPosts(){
     setPosts(await ApiMethods.getPosts());
   }
